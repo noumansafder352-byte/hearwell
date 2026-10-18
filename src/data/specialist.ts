@@ -42,5 +42,5 @@ export const specialist = {
     },
     body: "His stated areas of expertise include diagnostic hearing evaluations, hearing aid fittings, tinnitus management, and vestibular assessments. He focuses on understanding patients' concerns and providing professional guidance tailored to their needs.",
   },
-  cta: "Book a Consultation with Dr. Bukhari",
+  cta: "Book a Consultation",
 };
