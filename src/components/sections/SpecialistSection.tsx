@@ -48,7 +48,8 @@ export function SpecialistSection({
             <Equalizer className="relative mt-6 h-8 text-white/40" bars={13} />
           </div>
 
-          <div className="p-7 sm:p-10 lg:p-14">
+          {/* min-w-0: lets the grid column shrink to the card instead of growing to fit the longest line. */}
+          <div className="min-w-0 p-7 sm:p-10 lg:p-14">
             <p className="eyebrow">{copy.eyebrow}</p>
             <h2 className="mt-4 text-[1.9rem] leading-tight font-bold text-navy sm:text-4xl">
               Meet {specialist.name}
@@ -69,7 +70,8 @@ export function SpecialistSection({
             <Button
               href={whatsappUrl(whatsappMessages.specialist)}
               size="lg"
-              className="mt-9 w-full sm:w-auto"
+              // The label is long; on phones let it wrap inside a taller button rather than overflow.
+              className="mt-9 h-auto! min-h-13 w-full py-3 text-center whitespace-normal! sm:w-auto sm:whitespace-nowrap!"
               icon={<CalendarCheck className="size-5" aria-hidden />}
             >
               {specialist.cta}
